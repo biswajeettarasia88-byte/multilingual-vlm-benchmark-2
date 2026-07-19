@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "image_id": "REF_001",
+    "filename": "REF_001_doc_test_1.jpg"
+  },
+  {
+    "image_id": "REF_002",
+    "filename": "REF_002_scene_test_1.jpg"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "image_id": "REF_002",
+  "split": "train",
+  "filename": "REF_002_scene_test_1.jpg",
+  "scene_type": "Scene Text",
+  "country": "Unknown",
+  "language_distribution": {
+    "English": 1
+  },
+  "script_distribution": {
+    "Latin": 1
+  },
+  "license": "APACHE-2.0",
+  "photographer": "GitHub Raw",
+  "annotation_timestamp": "2026-07-19T23:46:01.750428Z",
+  "validation_status": "passed"
+}

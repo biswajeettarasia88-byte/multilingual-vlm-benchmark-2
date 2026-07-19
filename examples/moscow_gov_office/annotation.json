@@ -1,0 +1,102 @@
+{
+  "image_id": "SHOWCASE_008",
+  "schema_version": "1.0.0",
+  "ocr_regions": [
+    {
+      "region_id": "T1",
+      "bbox": [
+        120,
+        200,
+        400,
+        280
+      ],
+      "polygon": [
+        [
+          120,
+          200
+        ],
+        [
+          400,
+          200
+        ],
+        [
+          400,
+          280
+        ],
+        [
+          120,
+          280
+        ]
+      ],
+      "rotated_bbox": [
+        120,
+        200,
+        400,
+        280,
+        0
+      ],
+      "reading_order": 1,
+      "parent_region": "BOARD_1",
+      "child_regions": [],
+      "text": "Dummy Russian",
+      "normalized_text": "Dummy Russian",
+      "language": "Russian",
+      "script": "Cyrillic",
+      "romanization": "Dummy",
+      "translation": "Dummy",
+      "font_style": "normal",
+      "font_color": "black",
+      "background_color": "white",
+      "vertical_text": false,
+      "handwritten": false,
+      "curved": false,
+      "occluded": false,
+      "confidence": 1.0
+    }
+  ],
+  "entities": [
+    {
+      "entity": "Dummy",
+      "entity_type": "LOC",
+      "entity_bbox": [
+        120,
+        200,
+        400,
+        280
+      ],
+      "entity_region": [
+        "T1"
+      ]
+    }
+  ],
+  "relationships": {
+    "region_connections": [],
+    "layout_graph": {},
+    "text_flow": [
+      "T1"
+    ]
+  },
+  "reasoning": {
+    "scene_description": "A synthetic Govt Office scene in Russia.",
+    "reasoning_chain": [
+      "Extract text."
+    ],
+    "visual_grounding": [
+      {
+        "concept": "text",
+        "region_id": "T1"
+      }
+    ],
+    "qa_pairs": [
+      "Q1"
+    ],
+    "difficulty": "hard",
+    "benchmark_tasks": [
+      "OCR",
+      "Semantic QA"
+    ],
+    "evaluation_targets": [
+      "T1"
+    ]
+  }
+}

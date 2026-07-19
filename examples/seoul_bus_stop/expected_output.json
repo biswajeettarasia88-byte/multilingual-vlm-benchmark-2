@@ -1,0 +1,16 @@
+{
+  "image_id": "SHOWCASE_004",
+  "schema_version": "1.0.0",
+  "detected_languages": [
+    "Korean",
+    "English"
+  ],
+  "extracted_text": "Dummy",
+  "answers": [
+    {
+      "task_id": "Q1",
+      "task_type": "general_qa",
+      "answer": "Dummy"
+    }
+  ]
+}

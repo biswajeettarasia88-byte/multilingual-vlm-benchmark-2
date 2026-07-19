@@ -2,11 +2,11 @@
   "dataset_name": "Multilingual VLM Benchmark Showcase",
   "dataset_version": "1.0",
   "sample_version": "1.0.0",
-  "image_id": "SHOWCASE_001",
-  "sample_id": "SHOWCASE_001",
+  "image_id": "SHOWCASE_021",
+  "sample_id": "SHOWCASE_021",
   "annotation_version": "1.0.0",
-  "annotation_timestamp": "2026-07-19T10:00:00Z",
-  "annotation_tool": "manual",
+  "annotation_timestamp": "2026-07-19T12:00:00Z",
+  "annotation_tool": "synthetic_generator",
   "review_status": "approved",
   "reviewer": "admin",
   "license": "CC-BY-4.0",
@@ -24,26 +24,26 @@
   "capture_device": "synthetic",
   "camera_model": "generator",
   "capture_type": "generated",
-  "lighting": "fluorescent",
-  "weather": "indoor",
+  "lighting": "indoor",
+  "weather": "none",
   "blur": "none",
   "noise": "low",
   "occlusion": "none",
   "perspective": "frontal",
-  "scene_type": "public_transport",
+  "scene_type": "Government Document",
   "country": "India",
-  "city": "New Delhi",
+  "city": "Unknown",
   "gps": {
-    "lat": 28.6328,
-    "lon": 77.2197
+    "lat": 0.0,
+    "lon": 0.0
   },
-  "text_density": 0.45,
+  "text_density": 0.5,
   "language_distribution": {
-    "Hindi": 0.5,
-    "English": 0.5
+    "English": 0.5,
+    "Hindi": 0.5
   },
   "script_distribution": {
-    "Devanagari": 0.5,
-    "Latin": 0.5
+    "Latin": 0.5,
+    "Devanagari": 0.5
   }
 }

@@ -1,0 +1,10 @@
+{
+  "image_id": "SHOWCASE_011",
+  "schema_version": "1.0.0",
+  "known_failure_modes": [
+    {
+      "type": "OCR Failure",
+      "description": "Synthetic failure mode."
+    }
+  ]
+}

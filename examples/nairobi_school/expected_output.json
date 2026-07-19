@@ -1,0 +1,16 @@
+{
+  "image_id": "SHOWCASE_010",
+  "schema_version": "1.0.0",
+  "detected_languages": [
+    "Swahili",
+    "English"
+  ],
+  "extracted_text": "Dummy",
+  "answers": [
+    {
+      "task_id": "Q1",
+      "task_type": "general_qa",
+      "answer": "Dummy"
+    }
+  ]
+}

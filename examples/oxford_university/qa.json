@@ -1,0 +1,12 @@
+{
+  "image_id": "SHOWCASE_009",
+  "schema_version": "1.0.0",
+  "tasks": [
+    {
+      "task_id": "Q1",
+      "task_type": "general_qa",
+      "question": "What is in the image?",
+      "difficulty": 1
+    }
+  ]
+}

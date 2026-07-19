@@ -1,0 +1,20 @@
+[
+  {
+    "unique_id": "",
+    "image_filename": "",
+    "country": "",
+    "city": "",
+    "gps": "",
+    "scene_category": "",
+    "languages": [],
+    "scripts": [],
+    "source": "",
+    "license": "",
+    "photographer": "",
+    "collection_date": "",
+    "annotation_status": "",
+    "qa_status": "",
+    "validation_status": "",
+    "split": ""
+  }
+]

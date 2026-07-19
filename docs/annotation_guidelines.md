@@ -1,41 +1,28 @@
 # Annotation Guidelines
 
-**Version:** 1.0.0  
-**Last Updated:** 2026-07-19
+Detailed instructions for annotators.
 
-**Purpose:** Guide for dataset annotators.  
-**Scope:** Rules for bounding boxes, translations, grounding.
-
----
-
-## Table of Contents
-1. [Bounding Boxes & Polygons](#bounding-boxes--polygons)
-2. [Language & Script Labeling](#language--script-labeling)
-3. [Translation & Romanization](#translation--romanization)
-4. [Named Entities](#named-entities)
-5. [Grounding & Reasoning](#grounding--reasoning)
-6. [Reading Order](#reading-order)
-7. [Quality Checks](#quality-checks)
-
-## Bounding Boxes & Polygons
-Use tight boxes. For curved/distorted text, use polygons or rotated boxes.
-
-## Language & Script Labeling
-Strict adherence to ISO codes. Handle mixed scripts accurately.
-
-## Translation & Romanization
-Context-aware English translation. Standard romanization schemes.
-
-## Named Entities
-Tag standard NER categories (LOC, ORG, PER).
-
-## Grounding & Reasoning
-Explicit mappings between entities in text and their coordinates. Multi-hop logic defined in reasoning chains.
+## Bounding Polygons
+Ensure tight bounding polygons around text. Use rotated bounding boxes where necessary.
 
 ## Reading Order
-Left-to-right, top-to-bottom unless script dictates otherwise.
+Link text regions in natural human reading order.
 
-## Quality Checks
-All annotations must pass blind peer-review and automated format checks.
+## Language and Script Labels
+Accurately label all identified languages and scripts per region.
 
-**Related:** [Dataset Schema](dataset_schema.md)
+## NER & OCR Transcription
+Extract exact text for OCR transcription and label Named Entities (NER). 
+
+## Translation & Romanization
+Provide literal translations and romanizations for non-Latin scripts.
+
+## Spatial Reasoning & Question Generation
+Create QA pairs that require multi-hop spatial reasoning.
+
+## Expected Outputs & Failure Cases
+Define what constitutes a correct answer and document common expected VLM failure modes.
+
+## Quality Assurance
+- Double annotation required for all images.
+- Conflict resolution process involves a 3rd senior annotator.

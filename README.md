@@ -1,220 +1,142 @@
-<div align="center">
-  <h1>🌍 Benchmark Task 2 (Text in Image)</h1>
-  <p>
-    <b>A production-ready pipeline for multilingual Vision-Language Model benchmarking and automated dataset generation.</b>
-  </p>
-  
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-  [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
-  [![Code Style: PEP8](https://img.shields.io/badge/code%20style-pep8-green.svg)](https://www.python.org/dev/peps/pep-0008/)
-</div>
+# Multilingual VLM Benchmark
 
----
-
-## 📑 Table of Contents
-1. [Project Overview](#-project-overview)
-2. [Features](#-features)
-3. [Repository Structure](#-repository-structure)
-4. [Pipeline Architecture](#-pipeline-architecture)
-5. [Installation](#-installation)
-6. [Quick Start](#-quick-start)
-7. [Configuration](#-configuration)
-8. [Example Images](#-example-images)
-9. [Example Output](#-example-output)
-10. [Documentation](#-documentation)
-11. [License](#-license)
+A rigorous, massive-scale evaluation framework designed to test Vision-Language Models (VLMs) on multi-hop reasoning, strict OCR accuracy, and spatial grounding across diverse global languages and scripts.
 
 ---
 
 ## 📖 Project Overview
 
-Vision-Language Models (VLMs) have demonstrated incredible capabilities in zero-shot image understanding, but evaluating their ability to process complex multilingual text directly from images remains a significant challenge.
+The Multilingual VLM Benchmark is engineered to bridge the gap between simple text extraction (OCR) and complex multimodal logic. Modern foundation models can read English text effortlessly, but often hallucinate or fail when confronted with densely packed, multi-script environments like a crowded Asian street market, a complex Indian railway schedule, or a mixed-language Arabic/French highway sign.
 
-**This repository provides a fully automated framework to benchmark VLMs strictly on Benchmark Task 2 (Text in Image).** 
+This repository provides the core **evaluation framework**, the mathematical **scoring engine**, and the exhaustive **dataset schemas** needed to evaluate VLMs against top-tier academic standards.
 
-The primary objective of this pipeline is to ingest raw image metadata and rigorously evaluate how well state-of-the-art models (like GPT-4o, Gemini, Qwen, and InternVL) can perform Optical Character Recognition (OCR), detect native scripts, identify languages, generate transliterations and translations, and formulate text-aware comprehension questions. By removing generic scene-understanding, this repository provides a highly specialized diagnostic tool for multilingual text-in-image performance.
+## 🎯 Motivation & Benchmark Philosophy
+
+Currently, many benchmarks evaluate VLMs on contrived examples or clean, scanned documents. However, true AI autonomy requires models to interact with the messy, physical world. Our philosophy mandates that a benchmark must:
+1. **Reflect Reality**: Use unedited, real-world photographs with glare, occlusion, and noise.
+2. **Prevent Contamination**: Strictly partition the dataset to maintain hidden evaluation splits.
+3. **Punish Hallucinations**: Utilize strict metric systems that heavily penalize invented text.
+4. **Demand Reasoning**: Test the model's ability to combine localized text extraction with multi-hop logic (e.g., *“If I am at Gate 2, what time does the next train to Tokyo depart?”*).
+
+## 🚀 Why Another Benchmark?
+
+While exceptional benchmarks like OCRBench, DocVQA, and MMMU exist, they often under-represent low-resource languages and scripts. The Multilingual VLM Benchmark focuses aggressively on **linguistic diversity** (22+ languages), **complex visual grounding**, and **hierarchical reading orders**—challenges that routinely break contemporary multimodal models.
 
 ---
 
-## ✨ Features
+## 🛠️ Supported Benchmark Tasks
 
-- **Task 2 Enforcement**: Generates questions *only* about extracted text (e.g., "Which department issued the notice?") and strictly rejects generic visual queries.
-- **Extensive Model Support**: Benchmark both lightweight local Hugging Face VLMs and high-performance cloud APIs natively.
-- **Automated Dataset Caching**: Missing image URLs are automatically downloaded, verified, and cached locally.
-- **Resilient Orchestration**: Features stateful checkpointing, Out-Of-Memory (OOM) recovery, and PyTorch CUDA garbage collection.
-- **End-to-End Evaluation**: Automatically tracks OCR extraction success, script detection, language detection, translation quality, and JSON validity.
+Our framework rigorously evaluates VLMs across a spectrum of multimodal tasks:
+
+- **Core OCR**: Text Detection, Character/Word Accuracy, Romanization.
+- **Linguistic Analysis**: Language Identification, Script Identification, Translation.
+- **Entity Extraction**: Named Entity Recognition (NER).
+- **Spatial Logic**: Visual Grounding, Layout Analysis, Bounding Box / Polygon Localization.
+- **Advanced Reasoning**: Multi-hop Visual Question Answering (VQA), Scene Understanding, Instruction Following.
 
 ---
 
-## 📂 Repository Structure
+## 🗂️ Repository Architecture & Directory Tree
+
+This repository enforces strict separation of concerns between the evaluation framework and the benchmark dataset:
 
 ```text
 .
-├── docs/                 # Extended documentation and API references
-├── examples/             # Sample inputs, prompts, and outputs
-├── images/               # Sample images and dataset snapshots
-├── logs/                 # Execution logs
-├── project/
-│   ├── configs/          # YAML settings driving model/dataset configurations
-│   ├── datasets/         # Source JSONL files and cached image downloads
-│   ├── models/           # Individual wrappers for local and API VLMs
-│   ├── prompts/          # Standardized instructional text templates
-│   ├── outputs/          # Output JSONL checkpoints representing raw model generation
-│   ├── reports/          # Evaluation summaries, CSV leaderboards, and plotted graphs
-│   ├── main.py           # Core orchestrator and pipeline entry point
-│   ├── loader.py         # Dynamic schema auto-detection and image caching logic
-│   ├── benchmark.py      # Core inference loop tracking latency and success
-│   └── evaluation.py     # Evaluation engine parsing and scoring structural accuracy
-├── tests/                # Unittests and integration tests
-├── .github/              # CI workflows
-├── README.md             # Primary execution guide
-├── requirements.txt      # PyPI dependencies
-└── LICENSE               # MIT License
+├── configs/          # YAML configurations driving the benchmark and models
+├── docs/             # Granular markdown documentation
+├── evaluation/       # Scoring engine, metric calculations, report generation
+├── examples/         # Public demo showcase (NOT the official benchmark split)
+├── images/           # Global repository assets
+├── models/           # VLM API adapters and wrapper scripts
+├── project/          # Core orchestrator logic (data loaders, main loop)
+│   └── datasets/     # Train/Validation/Test data splits
+├── scripts/          # Independent utilities and visualization generators
+├── tests/            # Unit tests for pipeline integrity
+└── utilities/        # Shared helper functions (logging, file I/O)
 ```
 
 ---
 
-## 🔄 Pipeline Architecture
+## ⚙️ Installation & Quick Start
 
-The execution flow processes images sequentially through the following standardized stages:
-
-```
-project/main.py (Orchestrator)
-      ↓
-Dataset Loader (project/loader.py)
-      ↓
-Prompt Generator (project/benchmark.py)
-      ↓
-Vision Language Model (project/models/*)
-      ↓
-OCR Extraction
-      ↓
-Script Detection
-      ↓
-Language Detection
-      ↓
-Translation
-      ↓
-QA Generation
-      ↓
-Evaluation (project/evaluation.py)
-      ↓
-Leaderboard (project/report.py)
-      ↓
-PDF Report (project/plots.py)
-```
-
----
-
-## 📦 Installation
-
-We strongly recommend using a virtual environment (Python 3.10+ required).
-
+1. Clone the repository:
 ```bash
-git clone https://github.com/example/text-in-image-benchmark.git
-cd text-in-image-benchmark
+git clone https://github.com/biswajeettarasia88-byte/multilingual-vlm-benchmark.git
+cd multilingual-vlm-benchmark
+```
 
-python -m venv .venv
-# On Windows
-.venv\Scripts\activate
-# On macOS/Linux
-source .venv/bin/activate
-
-python -m pip install --upgrade pip
+2. Create a virtual environment and install dependencies:
+```bash
+conda create -n mvlm python=3.10 -y
+conda activate mvlm
 pip install -r requirements.txt
 ```
 
----
-
-## 🚀 Quick Start
-
-Ensure your keys are configured if you are using Cloud API models like GPT-4o or Gemini:
+3. Configure your API keys (for closed-source models):
 ```bash
-# On Windows (PowerShell)
-$env:OPENAI_API_KEY="your_openai_key"
-
-# On macOS/Linux
-export OPENAI_API_KEY="your_openai_key"
-```
-
-Execute the orchestration pipeline on the sample configuration:
-```bash
-python -m project.main --config project/configs/config.yaml --max-images 5
-```
-
-Once the pipeline finishes, the results are stored directly in your workspace:
-- **Checkpoints (Raw JSON):** `project/outputs/`
-- **PDF Report & Leaderboard:** `project/reports/Reports/`
-
----
-
-## ⚙️ Configuration
-
-The entire pipeline is driven by a single `config.yaml` file located at `project/configs/config.yaml`. 
-
-You do not need to modify Python code to switch models or datasets. The dataset auto-detector automatically detects fields in any standard `.jsonl` format.
-
-See [Configuration Documentation](docs/configuration.md) for a comprehensive list of all supported properties.
-
----
-
-## 🖼 Example Images
-
-![Example](images/example_signboard.jpg)
-
-*(A sample image from the dataset, evaluated for text extraction and multilingual comprehension).*
-
----
-
-## 📝 Example Output
-
-Below is a realistic, complete example of what the pipeline ingests and successfully generates based on the benchmark schema.
-
-### Input
-
-**Image:** [Signboard image]  
-**Caption Context:** "A speed limit sign in Hindi."
-
-↓
-
-### Generated Output
-
-```json
-{
-  "ocr_text": "नगर निगम दिल्ली\nपार्किंग निषेध\nयहाँ गाड़ियाँ खड़ी करना मना है।",
-  "scripts": [
-    "Devanagari"
-  ],
-  "languages": [
-    "Hindi"
-  ],
-  "multilingual_extraction": {
-    "original": "नगर निगम दिल्ली\nपार्किंग निषेध\nयहाँ गाड़ियाँ खड़ी करना मना है।",
-    "romanized": "Nagar Nigam Delhi\nParking Nishedh\nYahan gaadiyan khadi karna mana hai.",
-    "english_translation": "Municipal Corporation Delhi\nNo Parking\nParking vehicles here is prohibited."
-  },
-  "text_qa": {
-    "question": "Which department issued this notice?",
-    "answer": "The Municipal Corporation Delhi issued this notice."
-  }
-}
+export OPENAI_API_KEY="your-key-here"
 ```
 
 ---
 
-## 📚 Documentation
+## 🤖 Supported Models
 
-Detailed documentation is available in the `docs/` directory:
-- [Installation](docs/installation.md)
-- [Configuration](docs/configuration.md)
-- [Datasets](docs/datasets.md)
-- [Models](docs/models.md)
-- [Pipeline](docs/pipeline.md)
-- [Examples](docs/examples.md)
-- [Troubleshooting](docs/troubleshooting.md)
+The evaluation pipeline is modular and supports the following architectures (both local execution and API access):
+
+- **Closed Source (API)**: GPT-4o, Gemini 2.5 Pro, Claude Opus 4
+- **Open Source (Local/API)**: Qwen2.5-VL, InternVL3, MiniCPM-V, Molmo, Pixtral, Phi-4 Multimodal, Llama 4 Vision
 
 ---
 
-## 📄 License
+## 📊 Evaluation Overview
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+The benchmark employs mathematical, industry-standard metrics to eliminate subjective grading:
+- **OCR Accuracy**: Normalized Edit Distance (NED), CER, WER.
+- **Translation Quality**: BLEU, COMET, ChrF.
+- **Visual Grounding**: Intersection over Union (IoU), Mean Average Precision (mAP).
+- **Reasoning**: Exact Match, Semantic Similarity, F1, Hallucination Penalty.
+
+---
+
+## 🖼️ Example Visualizations & JSON Schemas
+
+*This section will be expanded after the reference example is implemented.*
+
+## 🏆 Leaderboard & Benchmark Results
+
+*This section will be expanded after the reference example is implemented.*
+
+---
+
+## 🗺️ Repository Roadmap
+
+The benchmark is designed for massive long-term scalability:
+- **Phase A (Current)**: Architecture stabilization and pipeline scaffolding.
+- **Phase B (Upcoming)**: Construction of a 20-image showcase gallery demonstrating complex multi-script OCR.
+- **Version 1.0**: 100 benchmark images (Baseline Evaluation).
+- **Version 2.0**: 500 images (Rigorous Multilingual Evaluation).
+- **Version 3.0**: 5,000 images (Automated large-scale text-in-wild ingestion).
+- **Version 4.0**: 50,000+ multilingual images.
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions! Please follow our standard workflow: fork the repository, create a feature branch, and submit a PR. 
+*Note: Any changes to the core `annotation.json` schema require a major version bump.*
+
+## ❓ FAQ
+
+**Q: Are the images in the `examples/` folder part of the official test set?**
+No, the `examples/` folder contains a public showcase demonstrating the annotation schema. True benchmark evaluations run against a hidden `test/` split to prevent model contamination.
+
+**Q: Can I submit a new VLM for evaluation?**
+Yes. You can write a new model adapter in the `models/` directory and run the evaluation script locally.
+
+## 📄 License & Citation
+
+The evaluation framework is provided under standard open-source licensing. 
+Detailed licensing information for the dataset, including strict copyright and Fair Use adherence, will be documented in `metadata.json` for all evaluated images.
+
+If you use this benchmark in your research, please cite:
+*(Citation details will be added upon final release).*

@@ -1,12 +1,24 @@
 {
-  "run_id": "PILOT_002",
-  "timestamp": "2026-07-19T23:39:34.017009Z",
-  "pipeline_version": "v0.3.0",
-  "candidates_discovered": 12,
-  "candidates_ready": 8,
-  "candidates_downloaded": 0,
-  "download_failures": 8,
-  "license_failures": 0,
-  "validation_failures": 0,
-  "accepted": 0
+  "attempted": 83,
+  "successful_downloads": 2,
+  "accepted": 2,
+  "rejected": 81,
+  "reasons": {
+    "HTTP 404 / Not Found": 60,
+    "Connection Error": 21
+  },
+  "datasets": {
+    "PaddleOCR-Public": 2
+  },
+  "languages": {
+    "Chinese": 1,
+    "English": 1
+  },
+  "scripts": {
+    "Latin": 2
+  },
+  "categories": {
+    "Scene Text": 1,
+    "Documents": 1
+  }
 }

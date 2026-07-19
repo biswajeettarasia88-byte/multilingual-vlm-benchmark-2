@@ -1,0 +1,17 @@
+{
+  "image_id": "B1_0003",
+  "split": "train",
+  "filename": "B1_0003_PADD_0002.jpg",
+  "scene_type": "Scene Text",
+  "country": "China",
+  "language_distribution": {
+    "Chinese": 1
+  },
+  "script_distribution": {
+    "Latin": 1
+  },
+  "license": "APACHE-2.0",
+  "photographer": "PaddleOCR-Public",
+  "annotation_timestamp": "2026-07-20T05:24:28.412254Z",
+  "validation_status": "passed"
+}

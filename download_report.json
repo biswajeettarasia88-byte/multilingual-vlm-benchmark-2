@@ -1,0 +1,38 @@
+{
+  "downloaded": 0,
+  "failed": 8,
+  "failures": [
+    {
+      "id": "WIKI_000",
+      "reason": "HTTP 403"
+    },
+    {
+      "id": "WIKI_001",
+      "reason": "HTTP 403"
+    },
+    {
+      "id": "WIKI_002",
+      "reason": "HTTP 403"
+    },
+    {
+      "id": "WIKI_003",
+      "reason": "HTTP 403"
+    },
+    {
+      "id": "WIKI_004",
+      "reason": "HTTP 403"
+    },
+    {
+      "id": "WIKI_005",
+      "reason": "HTTP 403"
+    },
+    {
+      "id": "WIKI_006",
+      "reason": "HTTP 403"
+    },
+    {
+      "id": "WIKI_007",
+      "reason": "HTTP 403"
+    }
+  ]
+}

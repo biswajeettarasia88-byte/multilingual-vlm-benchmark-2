@@ -87,3 +87,9 @@ logs/
 outputs/
 
 project/datasets/images_scripts_multilingual.jsonl
+
+__pycache__/
+.pytest_cache/
+*.pyc
+outputs/*
+!outputs/README.md

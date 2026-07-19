@@ -1,0 +1,55 @@
+{
+  "total": 100,
+  "by_dataset": {
+    "PaddleOCR-Public": 25,
+    "CORD-v2 (Receipts)": 15,
+    "XFUND": 25,
+    "FUNSD": 10,
+    "MLT-2019": 25
+  },
+  "by_language": {
+    "Chinese": 17,
+    "English": 28,
+    "Indonesian": 7,
+    "Japanese": 1,
+    "German": 6,
+    "Portuguese": 5,
+    "Spanish": 4,
+    "French": 4,
+    "Italian": 3,
+    "Thai": 7,
+    "Tamil": 3,
+    "Cyrillic": 7,
+    "Devanagari": 4,
+    "Arabic": 1,
+    "Hangul": 3
+  },
+  "by_script": {
+    "Latin": 45,
+    "Han": 21,
+    "Hiragana": 9,
+    "Hangul": 3,
+    "Devanagari": 7,
+    "Thai": 1,
+    "Arabic": 6,
+    "Cyrillic": 1,
+    "Tamil": 7
+  },
+  "by_category": {
+    "Documents": 29,
+    "Scene Text": 23,
+    "Receipts": 7,
+    "Commercial": 16,
+    "Forms": 18,
+    "Transportation": 5,
+    "Government/Public Services": 2
+  },
+  "by_license": {
+    "APACHE-2.0": 25,
+    "MIT": 40,
+    "CC-BY-SA-4.0": 10,
+    "CC-BY-4.0": 25
+  },
+  "review_required": 17,
+  "ready": 83
+}

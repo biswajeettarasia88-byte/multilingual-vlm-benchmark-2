@@ -1,0 +1,49 @@
+{
+  "dataset_name": "Multilingual VLM Benchmark Showcase",
+  "dataset_version": "1.0",
+  "sample_version": "1.0.0",
+  "image_id": "demo_01_delhi_metro",
+  "sample_id": "demo_01",
+  "annotation_version": "1.0.0",
+  "annotation_timestamp": "2026-07-19T10:00:00Z",
+  "annotation_tool": "manual",
+  "review_status": "approved",
+  "reviewer": "admin",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source": "synthetic_showcase",
+  "source_url": "",
+  "copyright": "Open Source",
+  "checksum": "placeholder",
+  "image_sha256": "placeholder",
+  "image_width": 1024,
+  "image_height": 1024,
+  "original_resolution": "1024x1024",
+  "orientation": "landscape",
+  "rotation": 0,
+  "capture_device": "synthetic",
+  "camera_model": "generator",
+  "capture_type": "generated",
+  "lighting": "fluorescent",
+  "weather": "indoor",
+  "blur": "none",
+  "noise": "low",
+  "occlusion": "none",
+  "perspective": "frontal",
+  "scene_type": "public_transport",
+  "country": "India",
+  "city": "New Delhi",
+  "gps": {
+    "lat": 28.6328,
+    "lon": 77.2197
+  },
+  "text_density": 0.45,
+  "language_distribution": {
+    "Hindi": 0.5,
+    "English": 0.5
+  },
+  "script_distribution": {
+    "Devanagari": 0.5,
+    "Latin": 0.5
+  }
+}

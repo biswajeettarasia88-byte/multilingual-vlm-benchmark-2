@@ -1,0 +1,12 @@
+{
+  "image_id": "demo_01_delhi_metro",
+  "schema_version": "1.0.0",
+  "tasks": [
+    {
+      "task_id": "Q1",
+      "task_type": "spatial_reasoning",
+      "question": "Which direction should I walk to reach the Yellow Line?",
+      "difficulty": 3
+    }
+  ]
+}

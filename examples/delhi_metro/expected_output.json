@@ -1,0 +1,16 @@
+{
+  "image_id": "demo_01_delhi_metro",
+  "schema_version": "1.0.0",
+  "detected_languages": [
+    "Hindi",
+    "English"
+  ],
+  "extracted_text": "राजीव चौक Rajiv Chowk",
+  "answers": [
+    {
+      "task_id": "Q1",
+      "task_type": "spatial_reasoning",
+      "answer": "You should walk towards the left."
+    }
+  ]
+}

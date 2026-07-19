@@ -1,0 +1,20 @@
+{
+  "image_id": "demo_01_delhi_metro",
+  "model": "gpt-4o",
+  "schema_version": "1.0.0",
+  "metrics": {
+    "ocr": {
+      "cer": 0.0,
+      "wer": 0.0,
+      "ned": 1.0
+    },
+    "language_id": {
+      "f1": 1.0
+    },
+    "reasoning": {
+      "exact_match": 0,
+      "semantic_similarity": 0.92
+    }
+  },
+  "overall_score": 0.97
+}

@@ -1,0 +1,168 @@
+{
+  "image_id": "demo_01_delhi_metro",
+  "schema_version": "1.0.0",
+  "ocr_regions": [
+    {
+      "region_id": "T1",
+      "bbox": [
+        120,
+        200,
+        400,
+        280
+      ],
+      "polygon": [
+        [
+          120,
+          200
+        ],
+        [
+          400,
+          200
+        ],
+        [
+          400,
+          280
+        ],
+        [
+          120,
+          280
+        ]
+      ],
+      "rotated_bbox": [
+        120,
+        200,
+        400,
+        280,
+        0
+      ],
+      "reading_order": 1,
+      "parent_region": "BOARD_1",
+      "child_regions": [],
+      "text": "राजीव चौक",
+      "normalized_text": "राजीव चौक",
+      "language": "Hindi",
+      "script": "Devanagari",
+      "romanization": "Rajiv Chowk",
+      "translation": "Rajiv Chowk",
+      "font_style": "bold",
+      "font_color": "black",
+      "background_color": "yellow",
+      "vertical_text": false,
+      "handwritten": false,
+      "curved": false,
+      "occluded": false,
+      "confidence": 1.0
+    },
+    {
+      "region_id": "T2",
+      "bbox": [
+        120,
+        300,
+        400,
+        360
+      ],
+      "polygon": [
+        [
+          120,
+          300
+        ],
+        [
+          400,
+          300
+        ],
+        [
+          400,
+          360
+        ],
+        [
+          120,
+          360
+        ]
+      ],
+      "rotated_bbox": [
+        120,
+        300,
+        400,
+        360,
+        0
+      ],
+      "reading_order": 2,
+      "parent_region": "BOARD_1",
+      "child_regions": [],
+      "text": "Rajiv Chowk",
+      "normalized_text": "Rajiv Chowk",
+      "language": "English",
+      "script": "Latin",
+      "romanization": "Rajiv Chowk",
+      "translation": "Rajiv Chowk",
+      "font_style": "bold",
+      "font_color": "black",
+      "background_color": "yellow",
+      "vertical_text": false,
+      "handwritten": false,
+      "curved": false,
+      "occluded": false,
+      "confidence": 1.0
+    }
+  ],
+  "entities": [
+    {
+      "entity": "Rajiv Chowk",
+      "entity_type": "LOC",
+      "entity_bbox": [
+        120,
+        200,
+        400,
+        360
+      ],
+      "entity_region": [
+        "T1",
+        "T2"
+      ]
+    }
+  ],
+  "relationships": {
+    "region_connections": [
+      {
+        "from": "T1",
+        "to": "T2",
+        "type": "translation"
+      }
+    ],
+    "layout_graph": {},
+    "text_flow": [
+      "T1",
+      "T2"
+    ]
+  },
+  "reasoning": {
+    "scene_description": "A directional signboard in a metro station displaying the station name 'Rajiv Chowk' in Hindi and English.",
+    "reasoning_chain": [
+      "The sign indicates the current location is Rajiv Chowk.",
+      "The text is written in Hindi (Devanagari) on top and English (Latin) below."
+    ],
+    "visual_grounding": [
+      {
+        "concept": "Hindi text",
+        "region_id": "T1"
+      },
+      {
+        "concept": "English text",
+        "region_id": "T2"
+      }
+    ],
+    "qa_pairs": [
+      "Q1"
+    ],
+    "difficulty": "easy",
+    "benchmark_tasks": [
+      "OCR",
+      "Translation",
+      "Spatial Reasoning"
+    ],
+    "evaluation_targets": [
+      "T1",
+      "T2"
+    ]
+  }
+}

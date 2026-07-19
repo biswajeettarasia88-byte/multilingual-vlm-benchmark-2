@@ -1,0 +1,14 @@
+{
+  "image_id": "demo_01_delhi_metro",
+  "schema_version": "1.0.0",
+  "known_failure_modes": [
+    {
+      "type": "OCR Failure",
+      "description": "Models commonly hallucinate extra Devanagari ligatures due to compression artifacts near the text."
+    },
+    {
+      "type": "Wrong Reasoning",
+      "description": "Models often ignore the subtle directional arrow next to the station name."
+    }
+  ]
+}

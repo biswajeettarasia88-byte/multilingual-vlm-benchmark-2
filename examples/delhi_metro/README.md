@@ -8,3 +8,9 @@ This is the definitive reference example demonstrating the complete 12-file arch
 - **Spatial Reasoning**: Deducing directional travel based on sign arrows and layout.
 
 This directory contains the gold-standard schema definitions (`annotation.json`, `metadata.json`) alongside simulated evaluation outputs (`prediction.json`, `score.json`, `report.json`) to demonstrate the evaluation framework's data flow.
+
+## Image Documentation
+- **Image Type**: Synthetic
+- **Purpose**: Repository demonstration
+- **Not part of benchmark-v1**
+- **Generated solely to demonstrate the benchmark schema**

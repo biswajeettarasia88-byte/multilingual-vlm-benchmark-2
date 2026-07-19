@@ -25,12 +25,14 @@ The repository cleanly separates datasets, framework code, and documentation.
 - `examples/`
 - `images/`
 - `models/`
+- `outputs/`
 - `project/`
 - `scripts/`
 - `tests/`
 - `utilities/`
 
 ## Directory Responsibilities
+- `outputs/`: Runtime evaluation artifacts (predictions, scores, reports).
 - `project/`: Core orchestrator.
 - `evaluation/`: Scoring engine.
 - `models/`: Adapters to VLMs.

@@ -1,0 +1,22 @@
+{
+  "image_id": "MCD_NOTICE_01",
+  "model_id": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "gpu_used": "NVIDIA GeForce RTX 4090",
+  "processing_time_sec": 4.12,
+  "ocr_text": "नगर निगम दिल्ली\nपार्किंग निषेध\nयहाँ गाड़ियाँ खड़ी करना मना है।",
+  "scripts": [
+    "Devanagari"
+  ],
+  "languages": [
+    "Hindi"
+  ],
+  "multilingual_extraction": {
+    "original": "नगर निगम दिल्ली\nपार्किंग निषेध\nयहाँ गाड़ियाँ खड़ी करना मना है।",
+    "romanized": "Nagar Nigam Delhi\nParking Nishedh\nYahan gaadiyan khadi karna mana hai.",
+    "english_translation": "Municipal Corporation Delhi\nNo Parking\nParking vehicles here is prohibited."
+  },
+  "text_qa": {
+    "question": "Which department issued this notice?",
+    "answer": "The Municipal Corporation Delhi issued this notice."
+  }
+}

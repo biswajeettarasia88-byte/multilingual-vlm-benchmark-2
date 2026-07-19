@@ -1,0 +1,43 @@
+# 1. Dataset Configuration
+dataset:
+  jsonl_path: "sample_input.json"
+  images_dir: "examples/images"
+  max_images: null
+  download_missing: true
+
+# 2. Output and Logging Paths
+paths:
+  dataset_root: "examples"
+  output_root: "examples/outputs"
+  evaluation_root: "examples/reports"
+
+# 3. Model Providers & API Parameters
+models:
+  gpt4o:
+    enabled: true
+    provider: "openai"
+    model_name: "gpt-4o"
+    api_key_env: "OPENAI_API_KEY"
+    temperature: 0.0
+
+# 4. Hardware & Runtime Engine Settings
+runtime:
+  device: "cpu"
+  default_precision: "float32"
+  quantization: "none"
+  resume: true
+
+# 5. Pipeline Tasks (Text-in-Image)
+task_2_options:
+  enable_ocr: true
+  enable_script_detection: true
+  enable_language_detection: true
+  enable_translation: true
+  enable_transliteration: true
+  enable_text_qa: true
+
+# 6. Evaluation & Reporting
+evaluation:
+  report_generation:
+    generate_pdf: false
+    generate_leaderboard: true

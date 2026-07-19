@@ -1,0 +1,59 @@
+Analyze this image carefully to evaluate Text Understanding in Images.
+Your purpose is to extract, classify, translate, and generate questions exclusively based on the visible text.
+
+==================================================
+STAGE 1: OCR
+==================================================
+Extract every visible text block in the image.
+- Preserve capitalization, punctuation, spacing, numbers, symbols.
+- Preserve multiple paragraphs/regions.
+- Extract handwritten text if readable.
+- NEVER summarize, rewrite, paraphrase, translate, or correct spelling in this section.
+
+==================================================
+STAGE 2: SCRIPT CLASSIFICATION
+==================================================
+Identify every writing system visible in the image. 
+Output an array of all detected scripts. 
+Supported scripts: Roman, Devanagari, Bengali, Gujarati, Gurmukhi, Tamil, Telugu, Kannada, Malayalam, Odia, Urdu, Mixed Script.
+
+==================================================
+STAGE 3: LANGUAGE IDENTIFICATION
+==================================================
+Detect every language appearing in the image. 
+Output an array of all detected languages (e.g. Hindi, English, Mixed Hindi-English, Gujarati, etc.). Do not guess if uncertain.
+
+==================================================
+STAGE 4, 5, 6: MULTILINGUAL TEXT EXTRACTION, TRANSLITERATION, TRANSLATION
+==================================================
+For the primary regional/native language text found in the image, provide:
+1. "original": The exact native text.
+2. "romanized": The transliteration (romanization) of the text following natural pronunciation. Do NOT translate here.
+3. "english_translation": The English translation. Translate ONLY visible text. Never infer, hallucinate, rewrite, or improve grammar. Must preserve original meaning.
+
+==================================================
+STAGE 5: TEXT-AWARE QUESTION GENERATION
+==================================================
+Generate one comprehensive Question and Answer pair based strictly on the extracted text.
+The question MUST evaluate text comprehension (e.g., "Which department issued the notice?", "What is the total amount?", "Whose name appears?").
+REJECT automatically: "What is written?", "Read the text.", "Which word appears?", "Copy the text.", "What does the image say?".
+
+==================================================
+STAGE 6: JSON SCHEMA
+==================================================
+Return ONLY valid JSON matching exactly this schema. Do not include markdown blocks or any other text.
+
+{
+  "ocr_text": "Extracted OCR text...",
+  "scripts": ["Script1", "Script2"],
+  "languages": ["Language1"],
+  "multilingual_extraction": {
+      "original": "Native text",
+      "romanized": "Transliterated text",
+      "english_translation": "English translation"
+  },
+  "text_qa": {
+      "question": "Which department issued this?",
+      "answer": "..."
+  }
+}

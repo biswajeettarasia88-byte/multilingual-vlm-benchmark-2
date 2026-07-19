@@ -1,4 +1,8 @@
-Pillow>=9.0.0
-pytest>=7.0.0
-jsonschema>=4.0.0
-numpy>=1.21.0
+Pillow
+numpy
+pytest
+jsonschema
+ImageHash
+requests
+tqdm
+opencv-python

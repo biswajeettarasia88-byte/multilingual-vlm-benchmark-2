@@ -1,3 +1,2 @@
 # Contributor Covenant Code of Conduct
-
-Be excellent to each other.
+We as members, contributors, and leaders pledge to make participation in our community a harassment-free experience for everyone.

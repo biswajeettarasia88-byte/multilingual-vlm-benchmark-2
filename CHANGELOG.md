@@ -1,9 +1,9 @@
 # Changelog
-
 All notable changes to this project will be documented in this file.
 
-## [1.0.0] - 2026-07-14
+## [0.1.0] - 2026-07-19
 ### Added
-- Initial open-source release
-- Benchmark Task 2 (Text in Image) support
-- Automated dataset caching
+- Evaluation framework architecture (`evaluation/`).
+- Documentation system (`docs/`).
+- 23-example synthetic showcase (`examples/`).
+- CI/CD workflows and repository hygiene files.

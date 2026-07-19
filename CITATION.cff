@@ -1,8 +1,9 @@
 cff-version: 1.2.0
-title: Multilingual VQA Benchmark
-message: If you use this software, please cite it.
+message: "If you use this benchmark in your research, please cite it as below."
 authors:
-  - family-names: Developer
-    given-names: Open Source
-version: 1.0.0
-date-released: 2026-07-14
+- family-names: "Multilingual VLM Benchmark Team"
+  given-names: ""
+title: "Multilingual VLM Benchmark"
+version: 0.1.0
+date-released: 2026-07-19
+url: "https://github.com/biswajeettarasia88-byte/multilingual-vlm-benchmark"

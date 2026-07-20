@@ -1,0 +1,94 @@
+{
+  "campaigns": [
+    {
+      "name": "Campaign_A",
+      "target": "scene_text (category)",
+      "priority": 40.0,
+      "suggested_datasets": [
+        "FUNSD",
+        "CORD"
+      ],
+      "expected_diversity_gain": 0.4
+    },
+    {
+      "name": "Campaign_B",
+      "target": "ar (language)",
+      "priority": 30.0,
+      "suggested_datasets": [
+        "PaddleOCR-Public",
+        "MLT-2019"
+      ],
+      "expected_diversity_gain": 0.1
+    },
+    {
+      "name": "Campaign_C",
+      "target": "hi (language)",
+      "priority": 25.0,
+      "suggested_datasets": [
+        "PaddleOCR-Public",
+        "MLT-2019"
+      ],
+      "expected_diversity_gain": 0.1
+    },
+    {
+      "name": "Campaign_D",
+      "target": "zh (language)",
+      "priority": 20.0,
+      "suggested_datasets": [
+        "PaddleOCR-Public",
+        "MLT-2019"
+      ],
+      "expected_diversity_gain": 0.2
+    },
+    {
+      "name": "Campaign_E",
+      "target": "form (category)",
+      "priority": 20.0,
+      "suggested_datasets": [
+        "FUNSD",
+        "CORD"
+      ],
+      "expected_diversity_gain": 0.2
+    },
+    {
+      "name": "Campaign_F",
+      "target": "handwritten (category)",
+      "priority": 20.0,
+      "suggested_datasets": [
+        "FUNSD",
+        "CORD"
+      ],
+      "expected_diversity_gain": 0.2
+    },
+    {
+      "name": "Campaign_G",
+      "target": "fr (language)",
+      "priority": 10.0,
+      "suggested_datasets": [
+        "PaddleOCR-Public",
+        "MLT-2019"
+      ],
+      "expected_diversity_gain": 0.1
+    },
+    {
+      "name": "Campaign_H",
+      "target": "ko (language)",
+      "priority": 10.0,
+      "suggested_datasets": [
+        "PaddleOCR-Public",
+        "MLT-2019"
+      ],
+      "expected_diversity_gain": 0.1
+    },
+    {
+      "name": "Campaign_I",
+      "target": "ja (language)",
+      "priority": 10.0,
+      "suggested_datasets": [
+        "PaddleOCR-Public",
+        "MLT-2019"
+      ],
+      "expected_diversity_gain": 0.1
+    }
+  ]
+}

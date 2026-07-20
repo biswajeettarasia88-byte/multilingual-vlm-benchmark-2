@@ -1,0 +1,1 @@
+# Campaign Queue Summary\n- **cand_FUNSD_0**: Score 85, Priority 100\n- **cand_CORD_1**: Score 85, Priority 100

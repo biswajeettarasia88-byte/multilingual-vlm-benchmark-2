@@ -1,0 +1,36 @@
+[
+  {
+    "candidate_id": "cand_FUNSD_0",
+    "dataset": "FUNSD",
+    "verification_status": "VERIFIED",
+    "quality_score": 85,
+    "priority": 100,
+    "download_status": "READY",
+    "license": "CC-BY-4.0",
+    "languages": [
+      "en"
+    ],
+    "scripts": [
+      "Latin"
+    ],
+    "category": "scene_text",
+    "estimated_coverage_gain": 0.05
+  },
+  {
+    "candidate_id": "cand_CORD_1",
+    "dataset": "CORD",
+    "verification_status": "VERIFIED",
+    "quality_score": 85,
+    "priority": 100,
+    "download_status": "READY",
+    "license": "CC-BY-4.0",
+    "languages": [
+      "en"
+    ],
+    "scripts": [
+      "Latin"
+    ],
+    "category": "scene_text",
+    "estimated_coverage_gain": 0.05
+  }
+]

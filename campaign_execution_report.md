@@ -1,0 +1,1 @@
+# Campaign Execution Report\n## Execution Summary\nGenerated acquisition queue with 2 candidates.

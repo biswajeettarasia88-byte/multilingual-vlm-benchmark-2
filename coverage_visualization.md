@@ -1,0 +1,1 @@
+# Coverage Visualization\n\nPlaceholder for charts.

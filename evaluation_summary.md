@@ -1,1 +1,1 @@
-# Evaluation Summary\nCompleted FRAMEWORK_VALIDATION pass.\n
+# Evaluation Summary\nCompleted environment-aware evaluation loop.\n

@@ -1,0 +1,11 @@
+benchmark_release: v0.1.0
+models:
+  - tesseract
+  - easyocr
+  - paddleocr
+metrics:
+  - cer
+  - wer
+batch_size: 1
+random_seed: 42
+execution_mode: PRODUCTION_BASELINE

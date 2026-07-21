@@ -1,0 +1,1 @@
+# Production Evaluation Report\nEnvironment strictly evaluated. Execution results: {"tesseract": "IMPORT_FAILED", "easyocr": "NOT_INSTALLED", "paddleocr": "NOT_INSTALLED"}\n

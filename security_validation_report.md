@@ -1,0 +1,1 @@
+# Security Validation Report\nBlocked attempts: Path Traversal (../), Zip Bombs, Symlink escapes.\n

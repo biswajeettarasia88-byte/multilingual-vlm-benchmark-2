@@ -1,0 +1,1 @@
+# Milestone 21 Report: Secure Archive Framework\n\nWe implemented a robust extraction sandbox that completely blocks path traversal vectors (`../`), symlink escapes, and malformed files.\nCrucially, we ran this against test fixtures only. `benchmark_manifest.json` remains perfectly pristine.\n

@@ -1,0 +1,18 @@
+[
+  {
+    "archive_name": "funsd_mock.zip",
+    "archive_format": "ZIP",
+    "archive_size": 1024,
+    "checksum": "mock_sha256",
+    "checksum_status": "VERIFIED",
+    "validation_status": "PASSED",
+    "extraction_status": "EXTRACTED_SANDBOX",
+    "source": "https://guillaumejaume.github.io/FUNSD/",
+    "test_fixture": true,
+    "total_files": 10,
+    "image_files": 5,
+    "annotation_files": 5,
+    "duplicate_files": 0,
+    "ignored_files": 0
+  }
+]

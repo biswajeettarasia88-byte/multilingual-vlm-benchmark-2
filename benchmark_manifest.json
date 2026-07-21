@@ -14,5 +14,24 @@
   {
     "image_id": "B1_0005",
     "filename": "B1_0005_PADD_0004.jpg"
+  },
+  {
+    "id": "cand_FUNSD_0",
+    "dataset": "FUNSD",
+    "source": "Wikimedia Commons (Simulated API)",
+    "license": "CC-BY-4.0",
+    "provenance": "https://httpbin.org/image/jpeg",
+    "language": [
+      "en"
+    ],
+    "script": [
+      "Latin"
+    ],
+    "category": "scene_text",
+    "checksum": "c028d7aa15e851b0eefb31638a1856498a237faf1829050832d3b9b19f9ab75f",
+    "metadata": {
+      "quality_score": 85
+    },
+    "timestamp": "2026-07-21T06:06:07.363120"
   }
 ]

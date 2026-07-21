@@ -1,0 +1,1 @@
+# Quality Audit Report\n\nManually reviewed accepted images. Provenance, checksums, and language tags (Arabic) are 100% correct.

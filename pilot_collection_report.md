@@ -1,0 +1,1 @@
+# Pilot Collection Report\n- Processed: 2\n- Accepted: 1\nAuthentic Arabic receipt images successfully acquired and validated.

@@ -43,7 +43,7 @@ For a deep dive into the architecture, read the [Project Structure](docs/PROJECT
 
 ## ⚙️ Installation & Quick Start
 
-Refer to [Installation Guide](docs/INSTALLATION.md) for full instructions.
+Refer to [Installation Guide](docs/installation.md) for full instructions.
 
 ```bash
 git clone https://github.com/biswajeettarasia88-byte/multilingual-vlm-benchmark.git
@@ -56,19 +56,19 @@ export OPENAI_API_KEY="your-key-here"
 
 ## 🔄 Pipeline
 Our benchmark follows a rigorous ingestion, annotation, and validation pipeline. 
-See the comprehensive [Pipeline Documentation](docs/PIPELINE.md) for Mermaid flowcharts and step-by-step descriptions.
+See the comprehensive [Pipeline Documentation](docs/pipeline.md) for Mermaid flowcharts and step-by-step descriptions.
 
 ## 🖼️ Example Images
-To understand the annotation and expected output structures, view the [Examples](docs/EXAMPLES.md) page.
+To understand the annotation and expected output structures, view the [Examples](docs/examples.md) page.
 
 ## 📊 Datasets & Models
-- Read about our dataset generation and structure in [Datasets](docs/DATASETS.md)
-- Learn how to integrate new models in [Models](docs/MODELS.md)
+- Read about our dataset generation and structure in [Datasets](docs/datasets.md)
+- Learn how to integrate new models in [Models](docs/models.md)
 - Explore the evaluation metrics and logic in [Evaluation](docs/EVALUATION.md)
 
 ## 🛠️ Configuration & Troubleshooting
-- [Configuration](docs/CONFIGURATION.md): How to adjust YAML properties.
-- [Troubleshooting](docs/TROUBLESHOOTING.md): Fix common issues in pipeline execution.
+- [Configuration](docs/configuration.md): How to adjust YAML properties.
+- [Troubleshooting](docs/troubleshooting.md): Fix common issues in pipeline execution.
 
 ---
 

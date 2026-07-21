@@ -1,10 +1,10 @@
 # Multilingual VLM Benchmark Documentation
 
 ## Related Documentation
-- [Installation](INSTALLATION.md)
-- [Configuration](CONFIGURATION.md)
-- [Datasets](DATASETS.md)
-- [Models](MODELS.md)
-- [Pipeline](PIPELINE.md)
-- [Examples](EXAMPLES.md)
-- [Troubleshooting](TROUBLESHOOTING.md)
+- [Installation](installation.md)
+- [Configuration](configuration.md)
+- [Datasets](datasets.md)
+- [Models](models.md)
+- [Pipeline](pipeline.md)
+- [Examples](examples.md)
+- [Troubleshooting](troubleshooting.md)

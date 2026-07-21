@@ -1,0 +1,1 @@
+# Human Review Report\n\nAll raw acquisitions have been transitioned to STAGING. Awaiting manual promotion decisions.

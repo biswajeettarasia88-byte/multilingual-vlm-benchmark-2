@@ -1,19 +1,47 @@
 [
   {
     "image_id": "REF_001",
-    "filename": "REF_001_doc_test_1.jpg"
+    "filename": "REF_001_doc_test_1.jpg",
+    "state": "STAGING",
+    "review_date": null,
+    "reviewer": null,
+    "review_notes": null,
+    "review_recommendation": "REJECTED",
+    "promotion_decision": "PENDING",
+    "promotion_reason": null
   },
   {
     "image_id": "REF_002",
-    "filename": "REF_002_scene_test_1.jpg"
+    "filename": "REF_002_scene_test_1.jpg",
+    "state": "STAGING",
+    "review_date": null,
+    "reviewer": null,
+    "review_notes": null,
+    "review_recommendation": "REJECTED",
+    "promotion_decision": "PENDING",
+    "promotion_reason": null
   },
   {
     "image_id": "B1_0003",
-    "filename": "B1_0003_PADD_0002.jpg"
+    "filename": "B1_0003_PADD_0002.jpg",
+    "state": "STAGING",
+    "review_date": null,
+    "reviewer": null,
+    "review_notes": null,
+    "review_recommendation": "REJECTED",
+    "promotion_decision": "PENDING",
+    "promotion_reason": null
   },
   {
     "image_id": "B1_0005",
-    "filename": "B1_0005_PADD_0004.jpg"
+    "filename": "B1_0005_PADD_0004.jpg",
+    "state": "STAGING",
+    "review_date": null,
+    "reviewer": null,
+    "review_notes": null,
+    "review_recommendation": "REJECTED",
+    "promotion_decision": "PENDING",
+    "promotion_reason": null
   },
   {
     "id": "cand_FUNSD_0",
@@ -32,6 +60,13 @@
     "metadata": {
       "quality_score": 85
     },
-    "timestamp": "2026-07-21T06:06:07.363120"
+    "timestamp": "2026-07-21T06:06:07.363120",
+    "state": "STAGING",
+    "review_date": null,
+    "reviewer": null,
+    "review_notes": null,
+    "review_recommendation": "APPROVED",
+    "promotion_decision": "PENDING",
+    "promotion_reason": null
   }
 ]

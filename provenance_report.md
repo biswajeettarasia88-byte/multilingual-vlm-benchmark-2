@@ -1,0 +1,1 @@
+# Provenance Report\nAll staged items received explicit TEST_FIXTURE provenance tagging.\n

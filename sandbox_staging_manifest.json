@@ -1,0 +1,25 @@
+[
+  {
+    "asset_uuid": "093136be-33d1-4eba-ab66-4005bcd87a5d",
+    "metadata": {
+      "uuid": "093136be-33d1-4eba-ab66-4005bcd87a5d",
+      "file_size": 15,
+      "checksum": "816afff0aa9895b66fc9a3b86a43314cefb0101705daf073724af5d21782c2bb",
+      "checksum_algorithm": "SHA-256",
+      "validation_status": "VALID",
+      "duplicate_status": "NONE"
+    },
+    "provenance": {
+      "fixture_name": "D:\\Internsip Work\\tests\\fixtures\\ingestion\\valid_image.png",
+      "source_type": "TEST_FIXTURE",
+      "ingestion_mode": "FRAMEWORK_VALIDATION",
+      "pipeline_version": "1.0",
+      "timestamps": "2026-07-21T06:42:26.059872",
+      "validation_history": "PASSED",
+      "benchmark_eligible": false
+    },
+    "review_status": "TEST_ONLY",
+    "benchmark_status": "NOT_IMPORTED",
+    "source_type": "TEST_FIXTURE"
+  }
+]

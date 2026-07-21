@@ -1,1 +1,1 @@
-# Provenance Report\nAll staged items received explicit TEST_FIXTURE provenance tagging.\n
+# Provenance Report\nComplete provenance records attached to all staged assets.\n

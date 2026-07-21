@@ -1,0 +1,1 @@
+# Benchmark Expansion Retrospective\n\n## Datasets\nFUNSD and CORD have clean, well-documented metadata and favorable open-source licenses.\n\n## Remaining Blockers\nNone. We are ready to execute the physical data acquisition pipeline.\n

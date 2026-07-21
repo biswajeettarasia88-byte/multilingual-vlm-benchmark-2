@@ -1,0 +1,1 @@
+# Adapter Validation\nMockOCRAdapter completed execution.\n

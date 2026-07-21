@@ -1,0 +1,1 @@
+# Milestone 25 Report: Benchmark Release v0.1.0 (FRAMEWORK_VALIDATION)\n\nGenerated immutable v0.1.0 release metadata and SHA-256.\nExecuted MockOCRAdapter against read-only approved assets.\nNo leaderboards were generated, strictly adhering to the objective of framework validation only.\n

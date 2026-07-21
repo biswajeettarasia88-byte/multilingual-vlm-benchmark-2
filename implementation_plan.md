@@ -1,0 +1,198 @@
+# Repository Cleanup Implementation Plan (V2)
+
+Based on the updated SAFE GITHUB REPOSITORY CLEANUP rules, here is the exact proposed outcome of the cleanup script.
+
+## User Review Required
+> [!IMPORTANT]
+> Please review the lists below. The cleanup will perform reference checks across the repository.
+
+### 1. Files to Delete
+
+These files are unused generated artifacts, temporary files, or obsolete milestones with NO references found in the codebase.
+- `[DELETE] .pytest_cache/.gitignore`
+- `[DELETE] .pytest_cache/CACHEDIR.TAG`
+- `[DELETE] .pytest_cache/README.md`
+- `[DELETE] .pytest_cache/v/cache/lastfailed`
+- `[DELETE] .pytest_cache/v/cache/nodeids`
+- `[DELETE] RECOVERY_CANDIDATES.md`
+- `[DELETE] docs/reports/FORENSIC_GIT_INVESTIGATION.md`
+- `[DELETE] docs/reports/VERIFY_RECOVERY_TARGET.md`
+- `[DELETE] docs/reports/github_recovery_analysis.md`
+- `[DELETE] docs/reports/recovery_candidates.md`
+- `[DELETE] docs/reports/recovery_commands.md`
+- `[DELETE] docs/reports/recovery_history.md`
+- `[DELETE] docs/reports/recovery_recommendation.md`
+- `[DELETE] docs/reports/recovery_timeline.md`
+- `[DELETE] logs/.gitkeep`
+- `[DELETE] logs/README.md`
+- `[DELETE] logs/debug/README.md`
+- `[DELETE] logs/execution/README.md`
+- `[DELETE] logs/validation/README.md`
+- `[DELETE] scratch/__pycache__/execute_research_phase3.cpython-312.pyc`
+- `[DELETE] scratch/__pycache__/run_download.cpython-312.pyc`
+- `[DELETE] scratch/__pycache__/run_duplicate.cpython-312.pyc`
+- `[DELETE] scratch/__pycache__/run_license.cpython-312.pyc`
+- `[DELETE] scratch/__pycache__/run_manifest.cpython-312.pyc`
+- `[DELETE] scratch/__pycache__/run_validate.cpython-312.pyc`
+- `[DELETE] scratch/benchmark_candidate_statistics.json`
+- `[DELETE] scratch/branches.txt`
+- `[DELETE] scratch/fsck.txt`
+- `[DELETE] scratch/log_all.txt`
+- `[DELETE] scratch/milestone11_candidate_manifest.json`
+- `[DELETE] scratch/pilot2_candidate_manifest.json`
+- `[DELETE] scratch/pilot_manifest.json`
+- `[DELETE] scratch/reflog.txt`
+- `[DELETE] scratch/run_download.py`
+- `[DELETE] scratch/run_duplicate.py`
+- `[DELETE] scratch/run_license.py`
+- `[DELETE] scratch/run_manifest.py`
+- `[DELETE] scratch/run_validate.py`
+- `[DELETE] scratch/snapshot_report.md`
+- `[DELETE] scratch/status.txt`
+- `[DELETE] scratch/tags.txt`
+
+### 2. Files to Move to outputs/archive/ (Step 1 & Step 5)
+
+These files matched deletion patterns but are either referenced elsewhere in the repository (and will have their references updated), or fall under Step 5 unused rules.
+- `[MOVE] outputs/archive/adapter_outputs/archive/validation_report.md -> outputs/archive/outputs/archive/adapter_outputs/archive/validation_report.md`
+- `[MOVE] outputs/archive/approved_manifest.json -> outputs/archive/outputs/archive/approved_manifest.json`
+- `[MOVE] outputs/archive/archive_catalog.json -> outputs/archive/outputs/archive/archive_catalog.json`
+- `[MOVE] outputs/archive/archive_statistics.json -> outputs/archive/outputs/archive/archive_statistics.json`
+- `[MOVE] outputs/archive/archive_outputs/archive/validation_report.md -> outputs/archive/outputs/archive/archive_outputs/archive/validation_report.md`
+- `[MOVE] outputs/archive/asset_resolution_report.md -> outputs/archive/outputs/archive/asset_resolution_report.md`
+- `[MOVE] outputs/archive/audit_report.json -> outputs/archive/outputs/archive/audit_report.json`
+- `[MOVE] outputs/archive/audit_report.md -> outputs/archive/outputs/archive/audit_report.md`
+- `[MOVE] outputs/archive/outputs/archive/download_report.json -> outputs/archive/outputs/archive/download_report.json`
+- `[MOVE] outputs/archive/benchmark_candidate_review.md -> outputs/archive/outputs/archive/benchmark_candidate_review.md`
+- `[MOVE] outputs/archive/benchmark_collection_report.md -> outputs/archive/outputs/archive/benchmark_collection_report.md`
+- `[MOVE] outputs/archive/benchmark_expansion_retrospective.md -> outputs/archive/outputs/archive/benchmark_expansion_retrospective.md`
+- `[MOVE] outputs/archive/benchmark_gap_report.md -> outputs/archive/outputs/archive/benchmark_gap_report.md`
+- `[MOVE] outputs/archive/benchmark_quality_summary.md -> outputs/archive/outputs/archive/benchmark_quality_summary.md`
+- `[MOVE] outputs/archive/benchmark_readiness_report.md -> outputs/archive/outputs/archive/benchmark_readiness_report.md`
+- `[MOVE] outputs/archive/benchmark_release_v0.1.0.json -> outputs/archive/outputs/archive/benchmark_release_v0.1.0.json`
+- `[MOVE] outputs/archive/benchmark_release_v0.1.0.sha256 -> outputs/archive/outputs/archive/benchmark_release_v0.1.0.sha256`
+- `[MOVE] outputs/archive/benchmark_v1_collection_summary.md -> outputs/archive/outputs/archive/benchmark_v1_collection_summary.md`
+- `[MOVE] outputs/archive/campaign_execution_report.md -> outputs/archive/outputs/archive/campaign_execution_report.md`
+- `[MOVE] outputs/archive/campaign_lessons_learned.md -> outputs/archive/outputs/archive/campaign_lessons_learned.md`
+- `[MOVE] outputs/archive/campaign_queue_summary.md -> outputs/archive/outputs/archive/campaign_queue_summary.md`
+- `[MOVE] outputs/archive/campaign_statistics.json -> outputs/archive/outputs/archive/campaign_statistics.json`
+- `[MOVE] outputs/archive/campaign_summary.md -> outputs/archive/outputs/archive/campaign_summary.md`
+- `[MOVE] outputs/archive/candidate_quality_report.md -> outputs/archive/outputs/archive/candidate_quality_report.md`
+- `[MOVE] outputs/archive/collection_statistics.json -> outputs/archive/outputs/archive/collection_statistics.json`
+- `[MOVE] outputs/archive/connector_statistics.json -> outputs/archive/outputs/archive/connector_statistics.json`
+- `[MOVE] outputs/archive/connector_outputs/archive/validation_report.md -> outputs/archive/outputs/archive/connector_outputs/archive/validation_report.md`
+- `[MOVE] outputs/archive/coverage_report.json -> outputs/archive/outputs/archive/coverage_report.json`
+- `[MOVE] outputs/archive/coverage_summary.md -> outputs/archive/outputs/archive/coverage_summary.md`
+- `[MOVE] outputs/archive/dataset_connector_summary.md -> outputs/archive/outputs/archive/dataset_connector_summary.md`
+- `[MOVE] outputs/archive/download_report.json -> outputs/archive/outputs/archive/download_report.json`
+- `[MOVE] outputs/archive/duplicate_report.json -> outputs/archive/outputs/archive/duplicate_report.json`
+- `[MOVE] outputs/archive/duplicate_report.md -> outputs/archive/outputs/archive/duplicate_report.md`
+- `[MOVE] outputs/archive/environment_report.json -> outputs/archive/outputs/archive/environment_report.json`
+- `[MOVE] outputs/archive/evaluation_summary.md -> outputs/archive/outputs/archive/evaluation_summary.md`
+- `[MOVE] outputs/archive/extraction_summary.md -> outputs/archive/outputs/archive/extraction_summary.md`
+- `[MOVE] outputs/archive/framework_outputs/archive/ingestion_statistics.json -> outputs/archive/outputs/archive/framework_outputs/archive/ingestion_statistics.json`
+- `[MOVE] outputs/archive/framework_outputs/archive/validation_report.md -> outputs/archive/outputs/archive/framework_outputs/archive/validation_report.md`
+- `[MOVE] outputs/archive/framework_validation_results.json -> outputs/archive/outputs/archive/framework_validation_results.json`
+- `[MOVE] outputs/archive/human_review_report.md -> outputs/archive/outputs/archive/human_review_report.md`
+- `[MOVE] outputs/archive/ingestion_statistics.json -> outputs/archive/outputs/archive/ingestion_statistics.json`
+- `[MOVE] outputs/archive/license_report.json -> outputs/archive/outputs/archive/license_report.json`
+- `[MOVE] official_outputs/archive/coverage_report.json -> outputs/archive/official_outputs/archive/coverage_report.json`
+- `[MOVE] outputs/archive/official_readiness_report.md -> outputs/archive/outputs/archive/official_readiness_report.md`
+- `[MOVE] outputs/archive/operational_readiness_report.md -> outputs/archive/outputs/archive/operational_readiness_report.md`
+- `[MOVE] outputs/outputs/archive/approved_manifest.json -> outputs/archive/outputs/archive/approved_manifest.json`
+- `[MOVE] outputs/outputs/archive/archive_catalog.json -> outputs/archive/outputs/archive/archive_catalog.json`
+- `[MOVE] outputs/outputs/archive/archive_statistics.json -> outputs/archive/outputs/archive/archive_statistics.json`
+- `[MOVE] outputs/outputs/archive/audit_report.json -> outputs/archive/outputs/archive/audit_report.json`
+- `[MOVE] outputs/outputs/archive/benchmark_release_v0.1.0.json -> outputs/archive/outputs/archive/benchmark_release_v0.1.0.json`
+- `[MOVE] outputs/outputs/archive/campaign_statistics.json -> outputs/archive/outputs/archive/campaign_statistics.json`
+- `[MOVE] outputs/outputs/archive/collection_statistics.json -> outputs/archive/outputs/archive/collection_statistics.json`
+- `[MOVE] outputs/outputs/archive/connector_statistics.json -> outputs/archive/outputs/archive/connector_statistics.json`
+- `[MOVE] outputs/outputs/archive/coverage_report.json -> outputs/archive/outputs/archive/coverage_report.json`
+- `[MOVE] outputs/outputs/archive/download_report.json -> outputs/archive/outputs/archive/download_report.json`
+- `[MOVE] outputs/outputs/archive/duplicate_report.json -> outputs/archive/outputs/archive/duplicate_report.json`
+- `[MOVE] outputs/outputs/archive/environment_report.json -> outputs/archive/outputs/archive/environment_report.json`
+- `[MOVE] outputs/outputs/archive/framework_outputs/archive/ingestion_statistics.json -> outputs/archive/outputs/archive/framework_outputs/archive/ingestion_statistics.json`
+- `[MOVE] outputs/outputs/archive/framework_validation_results.json -> outputs/archive/outputs/archive/framework_validation_results.json`
+- `[MOVE] outputs/outputs/archive/ingestion_statistics.json -> outputs/archive/outputs/archive/ingestion_statistics.json`
+- `[MOVE] outputs/outputs/archive/license_report.json -> outputs/archive/outputs/archive/license_report.json`
+- `[MOVE] outputs/official_outputs/archive/coverage_report.json -> outputs/archive/official_outputs/archive/coverage_report.json`
+- `[MOVE] outputs/archive/outputs/archive/review_statistics.json -> outputs/archive/outputs/archive/review_statistics.json`
+- `[MOVE] outputs/archive/outputs/archive/sandbox_review_queue.json -> outputs/archive/outputs/archive/sandbox_review_queue.json`
+- `[MOVE] outputs/archive/outputs/archive/sandbox_staging_manifest.json -> outputs/archive/outputs/archive/sandbox_staging_manifest.json`
+- `[MOVE] outputs/archive/outputs/archive/staging_coverage_projection.json -> outputs/archive/outputs/archive/staging_coverage_projection.json`
+- `[MOVE] outputs/staging_outputs/archive/coverage_report.json -> outputs/archive/staging_outputs/archive/coverage_report.json`
+- `[MOVE] outputs/archive/outputs/archive/validation_report.json -> outputs/archive/outputs/archive/validation_report.json`
+- `[MOVE] outputs/archive/outputs/archive/verification_statistics.json -> outputs/archive/outputs/archive/verification_statistics.json`
+- `[MOVE] outputs/archive/pilot2_candidate_review.md -> outputs/archive/outputs/archive/pilot2_candidate_review.md`
+- `[MOVE] outputs/archive/pilot2_execution_report.md -> outputs/archive/outputs/archive/pilot2_execution_report.md`
+- `[MOVE] outputs/archive/pilot2_lessons_learned.md -> outputs/archive/outputs/archive/pilot2_lessons_learned.md`
+- `[MOVE] outputs/archive/pilot_collection_report.md -> outputs/archive/outputs/archive/pilot_collection_report.md`
+- `[MOVE] outputs/archive/pilot_retrospective.md -> outputs/archive/outputs/archive/pilot_retrospective.md`
+- `[MOVE] outputs/archive/production_acquisition_report.md -> outputs/archive/outputs/archive/production_acquisition_report.md`
+- `[MOVE] outputs/archive/production_evaluation_report.md -> outputs/archive/outputs/archive/production_evaluation_report.md`
+- `[MOVE] outputs/archive/production_ingestion_report.md -> outputs/archive/outputs/archive/production_ingestion_report.md`
+- `[MOVE] outputs/archive/production_readiness.md -> outputs/archive/outputs/archive/production_readiness.md`
+- `[MOVE] outputs/archive/promotion_report.md -> outputs/archive/outputs/archive/promotion_report.md`
+- `[MOVE] outputs/archive/provenance_report.md -> outputs/archive/outputs/archive/provenance_report.md`
+- `[MOVE] quality_outputs/archive/audit_report.md -> outputs/archive/quality_outputs/archive/audit_report.md`
+- `[MOVE] outputs/archive/queue_outputs/archive/validation_report.md -> outputs/archive/outputs/archive/queue_outputs/archive/validation_report.md`
+- `[MOVE] outputs/archive/reference_dataset_report.md -> outputs/archive/outputs/archive/reference_dataset_report.md`
+- `[MOVE] outputs/archive/reference_dataset_validation.md -> outputs/archive/outputs/archive/reference_dataset_validation.md`
+- `[MOVE] outputs/archive/reproducibility_report.md -> outputs/archive/outputs/archive/reproducibility_report.md`
+- `[MOVE] outputs/archive/review_queue_report.md -> outputs/archive/outputs/archive/review_queue_report.md`
+- `[MOVE] outputs/archive/review_statistics.json -> outputs/archive/outputs/archive/review_statistics.json`
+- `[MOVE] outputs/archive/sandbox_review_queue.json -> outputs/archive/outputs/archive/sandbox_review_queue.json`
+- `[MOVE] outputs/archive/sandbox_staging_manifest.json -> outputs/archive/outputs/archive/sandbox_staging_manifest.json`
+- `[MOVE] outputs/archive/security_outputs/archive/validation_report.md -> outputs/archive/outputs/archive/security_outputs/archive/validation_report.md`
+- `[MOVE] outputs/archive/source_quality_report.md -> outputs/archive/outputs/archive/source_quality_report.md`
+- `[MOVE] outputs/archive/staging_coverage_projection.json -> outputs/archive/outputs/archive/staging_coverage_projection.json`
+- `[MOVE] staging_outputs/archive/coverage_report.json -> outputs/archive/staging_outputs/archive/coverage_report.json`
+- `[MOVE] outputs/archive/validation_report.json -> outputs/archive/outputs/archive/validation_report.json`
+- `[MOVE] outputs/archive/validation_report.md -> outputs/archive/outputs/archive/validation_report.md`
+- `[MOVE] outputs/archive/verification_pipeline_report.md -> outputs/archive/outputs/archive/verification_pipeline_report.md`
+- `[MOVE] outputs/archive/verification_statistics.json -> outputs/archive/outputs/archive/verification_statistics.json`
+- `[MOVE] outputs/archive/verification_summary.md -> outputs/archive/outputs/archive/verification_summary.md`
+
+### 3. Step 5/6 Files Kept due to References
+
+These files are preserved in place because references to them were found in the codebase.
+- `[KEEP] benchmark_manifest.json`
+- `[KEEP] candidate_manifest.json`
+- `[KEEP] candidate_verification_report.json`
+- `[KEEP] dataset_catalog.json`
+- `[KEEP] dataset_inventory.json`
+- `[KEEP] docs/data_collection.md`
+- `[KEEP] docs/download_readiness_checklist.md`
+- `[KEEP] leaderboard.csv`
+- `[KEEP] leaderboard.json`
+- `[KEEP] milestone11_discovery_report.md`
+- `[KEEP] milestone12_report.md`
+- `[KEEP] milestone13_report.md`
+- `[KEEP] milestone14_report.md`
+- `[KEEP] milestone15_report.md`
+- `[KEEP] milestone16_report.md`
+- `[KEEP] milestone17_report.md`
+- `[KEEP] milestone18_report.md`
+- `[KEEP] milestone20_report.md`
+- `[KEEP] milestone21_report.md`
+- `[KEEP] milestone22_report.md`
+- `[KEEP] milestone23_report.md`
+- `[KEEP] milestone24_report.md`
+- `[KEEP] milestone25_report.md`
+- `[KEEP] milestone26_report.md`
+- `[KEEP] outputs/benchmark_manifest.json`
+- `[KEEP] outputs/candidate_manifest.json`
+- `[KEEP] outputs/candidate_verification_report.json`
+- `[KEEP] outputs/dataset_catalog.json`
+- `[KEEP] outputs/dataset_inventory.json`
+- `[KEEP] outputs/leaderboard.json`
+- `[KEEP] outputs/pipeline_summary.json`
+- `[KEEP] outputs/review_history.json`
+- `[KEEP] outputs/review_queue.json`
+- `[KEEP] outputs/staging_manifest.json`
+- `[KEEP] outputs/verification_failures.json`
+- `[KEEP] pipeline_summary.json`
+- `[KEEP] review_history.json`
+- `[KEEP] review_queue.json`
+- `[KEEP] staging_manifest.json`
+- `[KEEP] verification_failures.json`

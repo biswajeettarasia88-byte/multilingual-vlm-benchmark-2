@@ -1,1 +1,0 @@
-# Source Quality Report\n\nGenerated Tier assignments for evaluated datasets.

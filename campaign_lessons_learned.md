@@ -1,1 +1,0 @@
-# Campaign Lessons Learned\n## Insights\n- Using a focused acquisition strategy prevents discovering irrelevant noise.

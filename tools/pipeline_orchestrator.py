@@ -13,12 +13,12 @@ def run_pipeline(source: str, manifest_path: str, dest_dir: str):
     downloader = get_downloader(source)
 
     # Mocking execution to generate summary
-    write_json_report("download_report.json", {"downloaded": 0, "failed": 0})
-    write_json_report("validation_report.json", {"valid": 0, "invalid": 0})
-    write_json_report("duplicate_report.json", {"duplicates": 0})
+    write_json_report("outputs/archive/download_report.json", {"downloaded": 0, "failed": 0})
+    write_json_report("outputs/archive/validation_report.json", {"valid": 0, "invalid": 0})
+    write_json_report("outputs/archive/duplicate_report.json", {"duplicates": 0})
 
     license_rep = check_licenses(manifest_path) if os.path.exists(manifest_path) else {}
-    write_json_report("license_report.json", license_rep)
+    write_json_report("outputs/archive/license_report.json", license_rep)
 
     summary = {
         "run_id": "RUN_001",
@@ -34,5 +34,5 @@ def run_pipeline(source: str, manifest_path: str, dest_dir: str):
         "pipeline_duration": "0s"
     }
     write_json_report("pipeline_summary.json", summary)
-    write_json_report("audit_report.json", summary)
+    write_json_report("outputs/archive/audit_report.json", summary)
     logger.info("Pipeline execution complete.", extra={"dataset_source": source})

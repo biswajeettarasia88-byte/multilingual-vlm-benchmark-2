@@ -1,1 +1,0 @@
-# Milestone 16 Report\n\nSuccessfully completed the first controlled acquisition pass. Manifest updated securely.

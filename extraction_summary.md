@@ -1,1 +1,0 @@
-# Extraction Summary\nZero assets imported to benchmark.\n

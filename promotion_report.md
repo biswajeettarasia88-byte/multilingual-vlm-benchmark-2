@@ -1,1 +1,0 @@
-# Promotion Report (execution_mode: FRAMEWORK_VALIDATION)\nPromoted 1 assets to benchmark_manifest.json with new BENCHMARK_ID.\n

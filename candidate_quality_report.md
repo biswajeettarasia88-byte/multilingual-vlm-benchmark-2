@@ -1,1 +1,0 @@
-# Candidate Quality Report\n\nScored all 100 candidates based on verification status and tier.

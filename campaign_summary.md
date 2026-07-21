@@ -1,1 +1,0 @@
-# Campaign Preparation Summary\nTotal Campaigns: 2 (FUNSD, CORD)\nCandidates Identified: 50\nBlocked by licensing: 0\nBlocked by missing metadata: 0\n

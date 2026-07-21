@@ -1,1 +1,0 @@
-# Benchmark Readiness Report\n\n**Overall Readiness Score**: 54.0/100

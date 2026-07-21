@@ -223,7 +223,7 @@ class DatasetLoader:
         }
 
         # Save validation report
-        report_path = self.jsonl_path.parent / "validation_report.json"
+        report_path = self.jsonl_path.parent / "outputs/archive/validation_report.json"
         try:
             with open(report_path, "w", encoding="utf-8") as rf:
                 json.dump(self.validation_report, rf, indent=2)

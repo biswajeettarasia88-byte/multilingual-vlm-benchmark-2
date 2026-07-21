@@ -1,1 +1,0 @@
-# Milestone 12 Report\n\n## Architecture Overview\nImplemented scoring for sources and candidates, plus coverage and caching.\n\n## Benchmark Readiness Score\n54.0\n

@@ -1,1 +1,0 @@
-# Archive Validation Report\nAll test fixtures successfully evaluated. Extraction bounds held firm.\n

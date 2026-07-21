@@ -1,1 +1,0 @@
-# Provenance Report\nComplete provenance records attached to all staged assets.\n

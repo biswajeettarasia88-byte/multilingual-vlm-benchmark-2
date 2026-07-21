@@ -1,1 +1,0 @@
-# Pilot Retrospective\n\n## Operational Issues\nNone. The pipeline successfully validated and downloaded the authentic payloads.\n## Recommendations\nScale to 100+ images.

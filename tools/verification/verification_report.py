@@ -21,7 +21,7 @@ def generate_reports(candidates, out_dir):
     stats["avg_response_time_ms"] = sum(times) / len(times) if times else 0
     stats["avg_content_length"] = sum(sizes) / len(sizes) if sizes else 0
     
-    with open(os.path.join(out_dir, "verification_statistics.json"), "w") as f:
+    with open(os.path.join(out_dir, "outputs/archive/verification_statistics.json"), "w") as f:
         json.dump(stats, f, indent=2)
         
     failures = [c for c in candidates if c.get("verification_status") == "FAILED"]
@@ -44,7 +44,7 @@ def generate_reports(candidates, out_dir):
     md.extend(["", "## Failure Reasons"])
     for k, v in stats["failure_reasons"].items(): md.append(f"- {k}: {v}")
     
-    with open(os.path.join(out_dir, "verification_summary.md"), "w") as f:
+    with open(os.path.join(out_dir, "outputs/archive/verification_summary.md"), "w") as f:
         f.write("\n".join(md))
         
     pipeline = [
@@ -76,5 +76,5 @@ def generate_reports(candidates, out_dir):
         "## Recommendations for Milestone 12",
         "Deploy this hardened verification logic on the next scale-out discovery campaign to drastically reduce the 404/Connection Error rejection rates seen during ingestion."
     ]
-    with open(os.path.join(out_dir, "verification_pipeline_report.md"), "w") as f:
+    with open(os.path.join(out_dir, "outputs/archive/verification_pipeline_report.md"), "w") as f:
         f.write("\n".join(pipeline))

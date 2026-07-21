@@ -77,7 +77,7 @@ def process_manifest(manifest_path: str, output_dir: str):
             report["failed"] += 1
             report["failures"].append({"url": url, "filename": filename})
             
-    with open(os.path.join(output_dir, "download_report.json"), "w", encoding="utf-8") as f:
+    with open(os.path.join(output_dir, "outputs/archive/download_report.json"), "w", encoding="utf-8") as f:
         json.dump(report, f, indent=2)
 
 if __name__ == "__main__":

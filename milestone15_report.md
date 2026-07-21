@@ -1,1 +1,0 @@
-# Milestone 15 Report\n\n## Architecture Summary\nStatic analysis and pipeline dry validation succeeded.\n\n## GO/NO-GO Recommendation\n**GO**. The system is ready for the first real benchmark collection.\n

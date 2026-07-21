@@ -35,10 +35,10 @@ def run_planner(coverage_path, base_dir):
     for g in ranked:
         gap_md.append(f"- **{g['key']} ({g['type']})**: Target {g['target_pct']*100:.1f}%, Current {g['current_pct']*100:.1f}%, Deficit {g['deficit']*100:.1f}%")
         
-    with open(os.path.join(base_dir, "benchmark_gap_report.md"), "w") as f:
+    with open(os.path.join(base_dir, "outputs/archive/benchmark_gap_report.md"), "w") as f:
         f.write("\n".join(gap_md))
         
-    with open(os.path.join(base_dir, "campaign_summary.md"), "w") as f:
+    with open(os.path.join(base_dir, "outputs/archive/campaign_summary.md"), "w") as f:
         f.write("# Campaign Summary\n\nSummarizing generated campaigns.")
         
     report = ["# Milestone 13 Report", "## Architecture Overview", "Gap-driven planner generated actionable campaigns."]

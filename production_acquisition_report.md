@@ -1,0 +1,1 @@
+# Production Acquisition Report\n- Processed: 50\n- Download Failed (404/403): 50 (Expected since dataset endpoints are often zipped or blocked)\n- Staged: 0\nGovernance rules strictly applied. No synthetic assets generated.

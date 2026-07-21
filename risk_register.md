@@ -1,0 +1,1 @@
+# Risk Register\n\n1. **Broken Dataset Links**\n   - Severity: High\n   - Likelihood: Medium\n   - Mitigation: Use verification cache and HEAD requests.\n2. **Network Rate Limiting**\n   - Severity: Medium\n   - Likelihood: High\n   - Mitigation: Exponential backoff.\n

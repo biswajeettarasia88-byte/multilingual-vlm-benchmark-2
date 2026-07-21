@@ -1,0 +1,1 @@
+# Connector Validation Report\nAll plugins instantiated successfully. Zero images downloaded.\n

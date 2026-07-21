@@ -1,0 +1,22 @@
+[
+  {
+    "dataset": "FUNSD",
+    "enumeration_status": "ENUMERATION_REQUIRES_DOWNLOAD",
+    "reason": "Dataset is distributed as a single ZIP file containing all images and annotations."
+  },
+  {
+    "dataset": "CORD",
+    "enumeration_status": "ENUMERATION_REQUIRES_DOWNLOAD",
+    "reason": "Assets are bundled in a zip file."
+  },
+  {
+    "dataset": "PaddleOCR",
+    "enumeration_status": "ENUMERATION_REQUIRES_DOWNLOAD",
+    "reason": "Assets bundled in tarball."
+  },
+  {
+    "dataset": "MLT2019",
+    "enumeration_status": "ENUMERATION_REQUIRES_AUTHENTICATION",
+    "reason": "Requires account creation on RRC portal."
+  }
+]

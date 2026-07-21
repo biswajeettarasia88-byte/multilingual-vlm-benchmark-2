@@ -1,0 +1,108 @@
+[
+  {
+    "dataset_name": "FUNSD",
+    "official_homepage": "https://guillaumejaume.github.io/FUNSD/",
+    "official_repository": "https://guillaumejaume.github.io/FUNSD/",
+    "official_download_page": "https://guillaumejaume.github.io/FUNSD/download/",
+    "license": "CC-BY-4.0",
+    "citation": "Jaume et al. FUNSD: A Dataset for Form Understanding in Noisy Scanned Documents",
+    "dataset_version": "1.0",
+    "distribution_method": "ZIP_ARCHIVE",
+    "archive_format": "zip",
+    "known_splits": [
+      "train",
+      "test"
+    ],
+    "languages": [
+      "en"
+    ],
+    "categories": [
+      "form"
+    ],
+    "enumeration_status": "ENUMERATION_REQUIRES_DOWNLOAD",
+    "download_method": "DOWNLOADABLE",
+    "documentation_status": "Official Website"
+  },
+  {
+    "dataset_name": "CORD",
+    "official_homepage": "https://github.com/clovaai/cord",
+    "official_repository": "https://github.com/clovaai/cord",
+    "official_download_page": "https://github.com/clovaai/cord",
+    "license": "CC-BY-4.0",
+    "citation": "Park et al. CORD: A Consolidated Receipt Dataset for Post-OCR Parsing",
+    "dataset_version": "1.0",
+    "distribution_method": "ZIP_ARCHIVE",
+    "archive_format": "zip",
+    "known_splits": [
+      "train",
+      "dev",
+      "test"
+    ],
+    "languages": [
+      "id"
+    ],
+    "categories": [
+      "receipt"
+    ],
+    "enumeration_status": "ENUMERATION_REQUIRES_DOWNLOAD",
+    "download_method": "DOWNLOADABLE",
+    "documentation_status": "GitHub README"
+  },
+  {
+    "dataset_name": "PaddleOCR",
+    "official_homepage": "https://github.com/PaddlePaddle/PaddleOCR",
+    "official_repository": "https://github.com/PaddlePaddle/PaddleOCR",
+    "official_download_page": "https://github.com/PaddlePaddle/PaddleOCR",
+    "license": "Apache-2.0",
+    "citation": "PaddleOCR Team",
+    "dataset_version": "2.0",
+    "distribution_method": "TAR_ARCHIVE",
+    "archive_format": "tar",
+    "known_splits": [
+      "train",
+      "val"
+    ],
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "categories": [
+      "scene_text",
+      "document"
+    ],
+    "enumeration_status": "ENUMERATION_REQUIRES_DOWNLOAD",
+    "download_method": "DOWNLOADABLE",
+    "documentation_status": "GitHub README"
+  },
+  {
+    "dataset_name": "MLT2019",
+    "official_homepage": "https://rrc.cvc.uab.es/?ch=15",
+    "official_repository": "N/A",
+    "official_download_page": "https://rrc.cvc.uab.es/?ch=15",
+    "license": "Custom (Research Only)",
+    "citation": "Nayef et al. ICDAR2019 Robust Reading Challenge on Multi-lingual Scene Text Detection",
+    "dataset_version": "2019",
+    "distribution_method": "ZIP_ARCHIVE",
+    "archive_format": "zip",
+    "known_splits": [
+      "train",
+      "test"
+    ],
+    "languages": [
+      "ar",
+      "bn",
+      "zh",
+      "hi",
+      "ja",
+      "ko",
+      "pt",
+      "en"
+    ],
+    "categories": [
+      "scene_text"
+    ],
+    "enumeration_status": "ENUMERATION_REQUIRES_AUTHENTICATION",
+    "download_method": "AUTHENTICATION_REQUIRED",
+    "documentation_status": "RRC Website"
+  }
+]

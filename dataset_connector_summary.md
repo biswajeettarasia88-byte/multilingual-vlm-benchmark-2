@@ -1,0 +1,1 @@
+# Dataset Connector Summary\nSuccessfully mapped FUNSD, CORD, PaddleOCR, and MLT2019 distribution pipelines.\n

@@ -1,0 +1,7 @@
+{
+  "supported_datasets": 4,
+  "connector_coverage": 1.0,
+  "enumeration_support": 0,
+  "authentication_requirements": 1,
+  "manual_download_requirements": 0
+}

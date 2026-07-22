@@ -1,1 +1,0 @@
-# Integration Checklist\n\n- [x] Catalog -> Scoring\n- [x] Scoring -> Discovery\n- [x] Discovery -> Verification\n- [x] Verification -> Planner\n- [x] Planner -> Executor\n

@@ -14,17 +14,17 @@ This repository provides a comprehensive pipeline for evaluating Vision-Language
 - `outputs/`: Prediction artifacts and scoring summaries generated during evaluation runs.
 
 ## Installation
-Detailed installation instructions can be found in [docs/INSTALLATION.md](docs/INSTALLATION.md).
+Detailed installation instructions can be found in [docs/INSTALLATION.md](docs/installation.md).
 
 ## Usage
-The main entry point for the benchmark is `project/main.py`. Ensure your environment variables (like `OPENAI_API_KEY`) are set according to [docs/CONFIGURATION.md](docs/CONFIGURATION.md).
+The main entry point for the benchmark is `project/main.py`. Ensure your environment variables (like `OPENAI_API_KEY`) are set according to [docs/CONFIGURATION.md](docs/configuration.md).
 
 ## Benchmark Scope
 For an in-depth look at our datasets, supported models, and pipeline architecture, please review:
-- [Datasets Guide](docs/DATASETS.md)
-- [Models Guide](docs/MODELS.md)
-- [Pipeline Architecture](docs/PIPELINE.md)
-- [Evaluation Metrics](docs/EVALUATION.md)
+- [Datasets Guide](docs/datasets.md)
+- [Models Guide](docs/models.md)
+- [Pipeline Architecture](docs/pipeline.md)
+- [Evaluation Metrics](docs/evaluation.md)
 
 ## Reproducibility & Citation
 All benchmark configurations are deterministic. To reproduce findings, simply run the pipeline on the specified dataset subsets. Please see [CITATION.cff](CITATION.cff) when referencing this repository in academic work.

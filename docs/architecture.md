@@ -52,4 +52,4 @@ Abstracted classes integrating local weights and remote APIs.
 ## Future Scalability
 Designed to scale from 20 to 50,000+ benchmark images.
 
-**Related:** [Dataset Schema](DATASETS.md), [Model Integration](MODELS.md)
+**Related:** [Dataset Schema](datasets.md), [Model Integration](models.md)

@@ -15,7 +15,7 @@ from tqdm import tqdm
 
 from project.config import BenchmarkConfig
 from project.loader import DatasetLoader, VLMDataset
-from project.models import get_model
+from models import get_model
 from project.utils import (
     get_peak_gpu_memory_gb,
     log_gpu_metric,

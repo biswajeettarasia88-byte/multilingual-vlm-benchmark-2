@@ -1,7 +1,7 @@
 import json
 import logging
 from PIL import Image
-from project.models.base_model import BaseModel
+from models.base_model import BaseModel
 
 logger = logging.getLogger("vlm_benchmark")
 

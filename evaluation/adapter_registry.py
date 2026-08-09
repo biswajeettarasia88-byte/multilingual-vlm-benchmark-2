@@ -44,3 +44,15 @@ ADAPTERS = {
     "easyocr": EasyOCRAdapter,
     "paddleocr": PaddleOCRAdapter
 }
+
+class MockOCRAdapter:
+    def __init__(self):
+        self.name = "MockOCR"
+        self.version = "1.0"
+        
+    def check_availability(self):
+        return "AVAILABLE"
+
+    def infer(self, path):
+        return "mocked text"
+

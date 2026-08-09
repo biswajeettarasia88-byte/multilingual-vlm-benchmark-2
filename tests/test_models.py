@@ -1,7 +1,7 @@
 import unittest
 from PIL import Image
-from project.models import get_model, MODEL_REGISTRY
-from project.models.base_model import BaseModel
+from models import get_model, MODEL_REGISTRY
+from models.base_model import BaseModel
 
 class TestVLMModels(unittest.TestCase):
     def test_model_registry(self):
